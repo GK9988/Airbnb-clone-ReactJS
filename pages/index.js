@@ -5,6 +5,8 @@ import Banner from "../components/Banner";
 import SmallCard from "../components/SmallCard";
 import { getFontDefinitionFromNetwork } from "next/dist/server/font-utils";
 import MediumCard from "../components/MediumCard";
+import LargeCard from "../components/LargeCard";
+import Footer from "../components/Footer";
 
 const Home = ({ exploreData, cardData }) => {
   return (
@@ -42,7 +44,14 @@ const Home = ({ exploreData, cardData }) => {
             ))}
           </div>
         </section>
+        <LargeCard
+          img="https://links.papareact.com/4cj"
+          title="The Greatest Outdoors"
+          description="Wishlists curated by Airbnb."
+          buttonText="Get Inspired."
+        />
       </main>
+      <Footer />
     </div>
   );
 };
